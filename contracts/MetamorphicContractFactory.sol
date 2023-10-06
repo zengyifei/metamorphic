@@ -82,7 +82,8 @@ contract MetamorphicContractFactory {
    * 08 5a gas            [0, 32, 0, 4, 28, caller, gas]            <>
    *
    * ** set the eighth stack item to selector, "what" to store via mstore **
-   * 09 63 push4
+   * 09 63 push4                           
+   * 0xaaf10f42是函数 getImplementation() 的methodId **
    * 10 aaf10f42 selector [0, 32, 0, 4, 28, caller, gas, 0xaaf10f42]    <>
    *
    * ** set the ninth stack item to 0, "where" to store via mstore ***
